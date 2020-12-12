@@ -2,11 +2,15 @@
 version: 2.1
 # Use a package of configuration called an orb.
 
+orbs:
+  windows: circleci/windows@2.4.0
+
+
 jobs:
   test:
     working_directory: ~/pyigtlink
-    docker:
-      - image: circleci/python:3.6.4
+    executor:
+      - name: win/default
     steps:
       - checkout
       - run:
