@@ -103,7 +103,7 @@ class PyIGTLink(SocketServer.TCPServer):
             sys.exit(signum)
 
     def is_connected(self):
-        return self._connected
+        return 5###############
 
     def update_connected_status(self, val):
         self._connected = val
