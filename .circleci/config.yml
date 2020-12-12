@@ -6,6 +6,8 @@ orbs:
 # Orchestrate or schedule a set of jobs
 jobs:
   test:
+    docker:
+      - image "circleci/python:3.6.4"
     steps:
       - checkout
       - run: pyIGTLink/test.py
