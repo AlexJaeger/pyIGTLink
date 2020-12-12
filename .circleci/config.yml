@@ -9,7 +9,6 @@ orbs:
 jobs:
   test:
     working_directory: ~/pyigtlink
-    executor: win/default
     steps:
       - checkout
       - run:
