@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: "pip install numpy"
+          command: "sudo pip install numpy"
       - run: python pyIGTLink/tests.py
 workflows:
   # Name the workflow "welcome"
