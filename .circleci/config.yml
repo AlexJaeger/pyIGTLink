@@ -12,12 +12,12 @@ jobs:
     executor: win/default # executor type
     steps:
       - checkout
-      - store_test_results:
-          path: test-results
       - run:
           command: |
             pip install numpy crcmod
       - run: python pyIGTLink/tests.py
+      - store_test_results:
+          path: test-results
 workflows:
   # Name the workflow "welcome"
   main:
