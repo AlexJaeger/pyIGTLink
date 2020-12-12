@@ -12,6 +12,7 @@ jobs:
     executor: win/default # executor type
     steps:
       - checkout
+      - store_test_results
       - run:
           command: |
             pip install numpy crcmod
