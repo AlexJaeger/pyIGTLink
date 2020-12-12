@@ -10,7 +10,8 @@ jobs:
     steps:
       - checkout
       - run:
-          command: "sudo pip install numpy"
+          command: |
+            sudo pip install numpy crcmod
       - run: python pyIGTLink/tests.py
 workflows:
   # Name the workflow "welcome"
