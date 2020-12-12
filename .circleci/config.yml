@@ -10,7 +10,7 @@ jobs:
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
-      - run: pyIGTLink/test.py
+      - run: python pyIGTLink/test.py
 workflows:
   # Name the workflow "welcome"
   main:
