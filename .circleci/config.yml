@@ -9,8 +9,6 @@ jobs:
       - image: circleci/python:3.6.4
     steps:
       - checkout
-      - run: 
-          - command: pip install numpy
       - run: python pyIGTLink/tests.py
 workflows:
   # Name the workflow "welcome"
